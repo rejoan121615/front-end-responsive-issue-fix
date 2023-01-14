@@ -1,0 +1,945 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+/* CSS Variables */
+:root {
+    --normal-font: 400;
+    --medium-font: 500;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --transition: 0.4s ease-in;
+    --line-height: 1.8;
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid black
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background: black;
+    height: 7rem;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #1C418C;
+    border-radius: 10px;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover {
+    color: #1C418C;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.lets-talk-btn {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    padding: 0.6rem 3rem;
+    background: #091B40 0% 0% no-repeat padding-box;
+    border: 1px solid #091B40;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 60px;
+    height: 9px;
+    background-color: #333;
+    margin: 10px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-20px, 20px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: var(--medium-font);
+}
+
+.logo span {
+    font-weight: var(--bolder-font);
+    margin-left: -9px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    font-weight: var(--medium-font);
+}
+
+.about {
+    padding: 2rem 5rem;
+}
+
+.about .introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .leadership-level {
+    font-size: 3rem;
+    font-weight: var(--bold-font);
+    color: #0487D9;
+}
+
+.about .expertise {
+    font-size: 4.5rem;
+    font-weight: var(--bolder-font);
+    color: #0487D9;
+}
+
+.about .when-you-need-it {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: var(--bold-font);
+}
+
+.about .about-description {
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.about .call-to-action {
+    margin-top: 10px;
+}
+
+.about .intro-image img {
+    height: 650px;
+}
+
+.intro-icons {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro-icons div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.intro-icons div img {
+    height: 72px;
+    margin-bottom: 1rem;
+}
+
+.services h1 span,
+.technology h1 span,
+.testimonials h1 span {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.services h1 span::after,
+.technology h1 span::after,
+.testimonials h1 span::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0487D9;
+    border-radius: 10px;
+}
+
+.services p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.services .fractional-cto {
+    padding: 5rem;
+    background-color: #D0E9F2;
+}
+
+.services .services-by-leader {
+    padding: 6rem 5rem;
+    text-align: center;
+}
+
+.services .services-by-leader h1 span::after {
+    width: 100px;
+    top: -6px;
+}
+
+.services .project-blueprints {
+    padding: 0rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .project-blueprints-text {
+    width: 50%;
+}
+
+.services .project-blueprints-text h1 {
+    font-weight: 500;
+}
+
+.services .project-blueprints-img img {
+    height: 650px;
+}
+
+.services .hourly-cto {
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .hourly-cto h1 {
+    font-weight: 500;
+}
+
+.services .hourly-cto .hourly-cto-text {
+    width: 50%;
+}
+
+.services .hourly-cto-img img {
+    height: 650px;
+}
+
+.services .development-resources {
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .development-resources h1 {
+    font-weight: 500;
+}
+
+.services .development-resources-text {
+    width: 50%;
+}
+
+.services .development-resources-img img {
+    height: 650px;
+}
+
+.technology {
+    padding: 6rem 5rem;
+}
+
+.technology .tech-stack h1 span::after {
+    width: 100px;
+    top: -6px;
+}
+
+.technology .tech-stack h1 {
+    text-align: center;
+}
+
+.technology .tech-stack-icons div {
+    flex: 1 0 15%;
+}
+
+.technology .tech-stack-icons {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.testimonials {
+    padding: 5rem;
+}
+
+.testimonials .testimonials-head h1 span::after {
+    width: 100px;
+    top: -6px;
+}
+
+.testimonials .testimonials-head {
+    padding: 0 5rem;
+}
+
+.testimonials .testimonials-head h1 {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 4rem;
+    padding-top: 5px;
+}
+
+.testimonials .testimonials-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.testimonials .testimonials-card::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials .testimonials-card .card {
+    padding: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 12px;
+    border-radius: 6px;
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.testimonials .testimonials-card .card .head {
+    padding: 0.6rem 0;
+}
+
+.testimonials .testimonials-card .card .body {
+    padding: 1rem 0;
+    opacity: 0.6;
+}
+
+.testimonials .testimonials-card .card .footer {
+    padding: 1rem 0;
+}
+
+.testimonials .testimonials-card .card .footer span {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.testimonials .testimonials-card .card img {
+    height: 18px;
+}
+
+.testimonials .testimonials-card .card p {
+    font-weight: 600;
+}
+
+.lets-talk {
+    position: relative;
+    height: 600px;
+}
+
+.lets-talk .lets-talk-bg-blue {
+    height: 300px;
+    background: #D0E9F2;
+}
+
+.lets-talk .lets-talk-bg-white {
+    height: 300px;
+    background: #FFFFFF;
+}
+
+.lets-talk .lets-talk-form {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 700px;
+    justify-content: center;
+}
+
+.lets-talk .lets-talk-form .form-text {
+    flex-basis: 250px;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    font-size: 2rem;
+    /* width: 50%; */
+    padding: 2rem;
+    height: 450px;
+    line-height: 1.75;
+    text-align: center;
+    outline: 8px solid black;
+    margin-right: 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.lets-talk .lets-talk-form .form-text p {
+    text-align: left;
+}
+
+.lets-talk .lets-talk-form .form-input {
+    height: 450px;
+    flex-basis: 450px;
+    background: white;
+    border: 2px solid black;
+    outline: 8px solid white;
+    box-shadow: 2px 5px 20px #00000033;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.lets-talk .lets-talk-form .form-input form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+}
+
+.footer-container {
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    transform: translateY(40%);
+}
+
+.footer-container .terms {
+    line-height: 2;
+    text-align: center;
+}
+
+.footer-container .terms span {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer-container .terms span a {
+    color: white;
+}
+
+.footer-container .social img {
+    margin: 8px;
+    height: 32px;
+    width: 32px;
+}
+
+.fserv-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    max-width: unset !important;
+}
+
+.fserv-container div {
+    margin-bottom: 20px !important;
+}
+
+.fserv-label {
+    display: none !important;
+}
+
+.powered-by {
+    display: none !important;
+}
+
+.fserv-field label.error {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.fserv-container .fserv-input-text {
+    width: 100% !important;
+    height: 2.5rem !important;
+    border: 1px solid #9c9c9c !important;
+    border-radius: 6px !important;
+    outline: none !important;
+    font-size: 1rem !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.fserv-field+.fserv-field {
+    margin-top: 0 !important;
+}
+
+.fserv-field+div:not(.fserv-field) {
+    margin: 0 !important;
+    border: none !important;
+    padding: 15px 30px 0 30px !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.fserv-field textarea[name='contact[custom_field][cf_description]'] {
+    height: 6rem !important;
+    padding: 10px !important;
+}
+
+.fserv-container .fserv-field input:focus,
+.fserv-container .fserv-field textarea:focus {
+    border: 1px solid black !important;
+}
+
+.fserv-container button[type=submit].fserv-button-submit {
+    margin: 0 !important;
+    width: 100% !important;
+    border-radius: 6px !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.fs-notifier.success.visible {
+    /* margin-top: 50px !important; */
+    display: none !important;
+}
+
+
+
+
+@media only screen and (min-width: 2000px) {
+    main {
+        width: 52%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+
+    .about .introduction .intro-image img,
+    .services .project-blueprints-img img,
+    .services .hourly-cto-img img,
+    .services .development-resources-img img {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+
+    .about .introduction .intro-image img {
+        height: 410px;
+    }
+
+    .services .project-blueprints-img img,
+    .services .hourly-cto-img img,
+    .services .development-resources-img img {
+        height: 460px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 991px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+    .nav {
+        padding: 1rem 2rem;
+    }
+
+    .nav ul {
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        top: 67px;
+        background: white;
+        z-index: 1;
+        padding: 2rem;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        box-shadow: 0 8px 6px -6px rgb(174, 172, 172);
+        transition: all 0.3s ease-in-out 0.05s;
+    }
+
+    .nav ul li {
+        padding: 1rem 0;
+        margin: 0
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: var(--medium-font);
+    }
+
+    .about {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .about .introduction {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .about .leadership-level {
+        font-size: 1.8rem;
+    }
+
+    .about .expertise {
+        font-size: 3rem;
+    }
+
+    .about .when-you-need-it {
+        font-size: 1.5rem;
+        padding: 0.4rem 0;
+    }
+
+    .about .about-description {
+        font-size: 1rem;
+        opacity: 0.8;
+        padding-bottom: 0;
+    }
+
+    .about .intro-image img {
+        height: unset;
+        width: 100%;
+    }
+
+    .intro-icons {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    .intro-icons div {
+        flex: 1 0 35%;
+    }
+
+    .intro-icons span {
+        font-size: 1rem;
+    }
+
+    .lets-talk-btn {
+        padding: 0.6rem 6rem;
+        border-radius: 6px;
+    }
+
+    .about .call-to-action {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -9%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .services h1 span,
+    .technology h1 span,
+    .testimonials h1 span {
+        font-size: 1.5rem;
+        position: relative;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-align: center;
+        display: block;
+        line-height: 1.5;
+    }
+
+    .services h1 span::after,
+    .technology h1 span::after,
+    .testimonials h1 span::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0487D9;
+        border-radius: 10px;
+    }
+
+    .services p {
+        padding: 1rem 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    .services .fractional-cto {
+        padding: 2rem;
+    }
+
+    .services .fractional-cto h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .services .services-by-leader {
+        padding: 7rem 2rem;
+    }
+
+    .services .project-blueprints {
+        padding: 0rem 2rem;
+        flex-direction: column;
+    }
+
+    .services .project-blueprints-text {
+        width: 100%;
+        order: 1;
+        display: inline-block;
+    }
+
+    .services .project-blueprints-text h1 {
+        font-weight: 600;
+    }
+
+    .services .project-blueprints-img img {
+        width: 100%;
+    }
+
+    .services .hourly-cto {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .services .hourly-cto .hourly-cto-text {
+        width: 100%;
+    }
+
+    .services .hourly-cto h1 {
+        font-weight: 600;
+    }
+
+    .services .hourly-cto-img img {
+        width: 100%;
+    }
+
+    .services .development-resources {
+        padding: 0rem 2rem;
+        flex-direction: column;
+    }
+
+    .services .development-resources .development-resources-text {
+        width: 100%;
+        order: 1;
+        display: inline-block;
+    }
+
+    .services .development-resources h1 {
+        font-weight: 600;
+    }
+
+    .services .development-resources-img img {
+        width: 100%;
+    }
+
+    .technology {
+        padding: 7rem 2rem;
+    }
+
+    .technology .tech-stack-icons div {
+        flex: 1 0 45%;
+    }
+
+    .technology .tech-stack-icons div img {
+        width: 50%;
+        align-self: center;
+    }
+
+    .testimonials {
+        padding: 1rem 2rem 7rem 2rem;
+    }
+
+    .testimonials .testimonials-head {
+        padding: 0;
+    }
+
+    .testimonials .testimonials-card {
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .testimonials .testimonials-card .card .head {
+        text-align: center;
+    }
+
+    .testimonials .testimonials-card .card .footer {
+        text-align: center;
+    }
+
+    .lets-talk .lets-talk-form {
+        display: flex;
+        flex-direction: column;
+        top: 65%;
+        width: 90%;
+        min-width: unset;
+    }
+
+    .lets-talk .lets-talk-bg-blue {
+        height: 400px;
+    }
+
+    .lets-talk .lets-talk-form .form-text {
+        width: 100%;
+        font-size: 1.5rem;
+        height: fit-content;
+        margin-right: unset;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 5px;
+        margin-bottom: 16px;
+        text-align: center;
+        flex-basis: unset;
+    }
+
+    .lets-talk .lets-talk-form .form-text p {
+        text-align: center;
+    }
+
+    .lets-talk .lets-talk-form .form-text img {
+        width: 76px;
+    }
+
+    .lets-talk .lets-talk-form .form-input {
+        width: 100%;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 5px;
+        flex-basis: unset;
+    }
+
+    .lets-talk .lets-talk-form .form-input .lets-talk-btn {
+        padding: 0rem 3rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .lets-talk .lets-talk-form .form-input form input[type='submit'] {
+        border-radius: 0px !important;
+    }
+
+    footer {
+        height: 20rem;
+        margin-top: 15rem
+    }
+
+    .footer-container {
+        flex-direction: column;
+        transform: translateY(10%);
+        padding: 1rem 4rem;
+    }
+
+    .footer-container div {
+        padding: 1rem 0;
+    }
+}
