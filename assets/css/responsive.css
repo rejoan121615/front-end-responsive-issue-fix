@@ -1,0 +1,148 @@
+.lets-talk-btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav {
+    padding: 2rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #about {
+    padding: 0rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+#about .introduction {
+  height: 125vh;
+  min-height: 700px;
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction {
+    height: calc(100vh - 113px);
+    min-height: initial;
+  }
+}
+#about .introduction .intro-text {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction .intro-text {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #about .introduction .intro-text {
+    flex-basis: 55%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction .intro-text .leadership-level {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .leadership-level {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .leadership-level {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction .intro-text .expertise {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .expertise {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .expertise {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it {
+    font-size: 1.5rem;
+    padding: 1.5rem 0px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .when-you-need-it {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .when-you-need-it {
+    font-size: 2rem;
+    padding: 2.5rem 0px;
+  }
+}
+#about .introduction .about-description {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  max-width: 600px;
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction .about-description {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #about .introduction .about-description {
+    font-size: 1.35rem;
+    max-width: initial;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #about .introduction .about-description {
+    font-size: 1.5rem;
+  }
+}
+#about .introduction .intro-image img {
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  #about .introduction .intro-image img {
+    max-width: 500px;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #about .introduction .intro-image img {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #about .introduction .intro-image img {
+    max-width: 650px;
+    margin-top: -50px;
+  }
+}
+#about .call-to-action {
+  position: initial;
+}
+#about .call-to-action a {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=responsive.css.map */
