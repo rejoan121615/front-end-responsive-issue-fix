@@ -1,10 +1,10 @@
 $grid-breakpoints: (
-    xs: 320px,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px,
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
 );
 
 $xs: 320px;
@@ -17,37 +17,37 @@ $mxl: 1800px;
 
 // mixing
 @mixin query($width) {
-    @media only screen and (min-width: $width) {
-        @content;
-    }
+  @media only screen and (min-width: $width) {
+    @content;
+  }
 }
 
 @mixin queryMinMax($minWidth, $maxWidth) {
-    @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
-        @content;
-    }
+  @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+    @content;
+  }
 }
 
 @mixin px($l, $r) {
-    padding-left: $l;
-    padding-right: $r;
+  padding-left: $l;
+  padding-right: $r;
 }
 @mixin py($t, $b) {
-    padding-top: $t;
-    padding-bottom: $b;
+  padding-top: $t;
+  padding-bottom: $b;
 }
 @mixin my($t, $b) {
-    margin-top: $t;
-    margin-bottom: $b;
+  margin-top: $t;
+  margin-bottom: $b;
 }
 @mixin mx($l, $r) {
-    margin-left: $l;
-    margin-bottom: $b;
+  margin-left: $l;
+  margin-bottom: $b;
 }
 
 // <-------- responsive styles ------------->
 
-// common style 
+// common style
 .lets-talk-btn {
   font-size: 1rem;
   @include py(15px, 15px);
@@ -56,115 +56,113 @@ $mxl: 1800px;
   }
 }
 
-
 // about section --------
 .nav {
-    @include queryMinMax($lg, $xl) {
-        padding: 1rem 2rem;
-    }
-    @include query($xl) {
-        padding: 2rem 4rem;
-    }
+  @include queryMinMax($lg, $xl) {
+    padding: 1rem 2rem;
+  }
+  @include query($xl) {
+    padding: 2rem 4rem;
+  }
 }
 #about {
-    @include queryMinMax($lg, $xl) {
-        padding: 0rem 2rem;
-    }
+  @include queryMinMax($lg, $xl) {
+    padding: 0rem 2rem;
+  }
+  @include query($lg) {
+    @include py(0px, 0px);
+  }
+  .introduction {
+    height: 125vh;
+    min-height: 700px;
+    max-height: 865px;
     @include query($lg) {
-      @include py(0px, 0px);
+      height: calc(100vh - 113px);
+      min-height: 550px;
     }
-    .introduction {
-        height: 125vh;
-        min-height: 700px;
-        max-height: 865px;
-        @include query($lg) {
-            height: calc(100vh - 113px);
-            min-height: 550px;
+    .intro-text {
+      margin-top: 70px;
+      @include query($lg) {
+        margin-top: 0px;
+      }
+      @include query($xxl) {
+        flex-basis: 55%;
+      }
+      @include query($lg) {
+        .leadership-level {
+          font-size: 2rem;
+          @include query($xxl) {
+            font-size: 2.5rem;
+          }
+          @include query($mxl) {
+            font-size: 3rem;
+          }
         }
-        .intro-text {
-            margin-top: 70px;
-            @include query($lg) {
-                margin-top: 0px;
-            }
-            @include query($xxl) {
-              flex-basis: 55%;
-            }
-            @include query($lg) {
-                .leadership-level {
-                    font-size: 2rem;
-                    @include query($xxl) {
-                      font-size: 2.5rem;
-                    }
-                    @include query($mxl) {
-                      font-size: 3rem;
-                    }
-                }
-                .expertise {
-                  
-                    font-size: 3rem;
-                    @include query ($xxl) {
-                      font-size: 3.8rem;
-                    }
-                    @include query($mxl) {
-                      font-size: 4.5rem;
-                    }
-                }
-                .when-you-need-it {
-                  font-size: 1.5rem;
-                  padding: 1.5rem 0px;
-                  @include query($xxl) {
-                    font-size: 1.8rem;
-                  }
-                  @include query($mxl) {
-                    font-size: 2rem;
-                    padding: 2.5rem 0px;
-                  }
-                }
-            }
+        .expertise {
+          font-size: 3rem;
+          @include query($xxl) {
+            font-size: 3.8rem;
+          }
+          @include query($mxl) {
+            font-size: 4.5rem;
+          }
         }
-        .about-description {
-            margin-top: 25px;
-            margin-bottom: 35px;
-            max-width: 600px;
-            @include query( $lg) {
-              font-size: 1.2rem;
-              margin-top: 0px;
-              padding-right: 40px;
-            }
-            @include query($xxl) {
-              font-size: 1.35rem;
-              max-width: initial;
-            }
-            @include query($mxl) {
-              font-size: 1.5rem;
-            }
+        .when-you-need-it {
+          font-size: 1.5rem;
+          padding: 1.5rem 0px;
+          @include query($xxl) {
+            font-size: 1.8rem;
+          }
+          @include query($mxl) {
+            font-size: 2rem;
+            padding: 2.5rem 0px;
+          }
         }
-        .intro-image {
-            img {
-                width: 100%;
-                @include query($xl) {
-                  max-width: 500px;
-                  display: inline-block;
-                }
-                @include query ($xxl) {
-                  max-width: 600px;
-                }
-                @include query($mxl) {
-                  max-width: 650px;
-                  margin-top: -50px;
-                }
-            }
-        }
+      }
     }
-    .call-to-action {
-        position: initial;
-        a {
-            display: inline-block;
-        }
+    .about-description {
+      margin-top: 25px;
+      margin-bottom: 35px;
+      max-width: 600px;
+      @include query($lg) {
+        font-size: 1.2rem;
+        margin-top: 0px;
+        padding-right: 40px;
+      }
+      @include query($xxl) {
+        font-size: 1.35rem;
+        max-width: initial;
+      }
+      @include query($mxl) {
+        font-size: 1.5rem;
+      }
     }
+    .intro-image {
+      img {
+        width: 100%;
+        @include query($xl) {
+          max-width: 500px;
+          display: inline-block;
+        }
+        @include query($xxl) {
+          max-width: 600px;
+        }
+        @include query($mxl) {
+          max-width: 650px;
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+  .call-to-action {
+    position: initial;
+    a {
+      display: inline-block;
+    }
+  }
 }
 
-// intro icons 
+// intro icons
 .intro-icons {
   @include py(50px, 50px);
   display: grid;
