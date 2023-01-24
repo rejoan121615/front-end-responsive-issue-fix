@@ -49,7 +49,11 @@ $mxl: 1800px;
 
 // common style 
 .lets-talk-btn {
+  font-size: 1rem;
   @include py(15px, 15px);
+  @include query($sm) {
+    font-size: 1.5rem;
+  }
 }
 
 
@@ -72,9 +76,10 @@ $mxl: 1800px;
     .introduction {
         height: 125vh;
         min-height: 700px;
+        max-height: 865px;
         @include query($lg) {
             height: calc(100vh - 113px);
-            min-height: initial;
+            min-height: 550px;
         }
         .intro-text {
             margin-top: 70px;
@@ -157,4 +162,45 @@ $mxl: 1800px;
             display: inline-block;
         }
     }
+}
+
+// intro icons 
+.intro-icons {
+  @include py(50px, 50px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+  @include query($sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include query($lg) {
+    grid-template-columns: repeat(6, 1fr);
+    @include py(65px, 65px);
+  }
+  @include query($xxl) {
+    @include py(75px, 75px);
+  }
+  div {
+    padding-top: 0px;
+    img {
+      @include query($xxl) {
+        height: 80px;
+      }
+      @include query($mxl) {
+        height: 100px;
+      }
+    }
+    &:nth-child(5) {
+      img {
+        height: 55px;
+        @include query($xxl) {
+          height: 63px;
+        }
+        @include query($mxl) {
+          height: 85px;
+        }
+      }
+    }
+  }
 }

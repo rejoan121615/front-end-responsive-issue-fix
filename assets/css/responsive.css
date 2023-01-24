@@ -1,6 +1,12 @@
 .lets-talk-btn {
+  font-size: 1rem;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+@media only screen and (min-width: 576px) {
+  .lets-talk-btn {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -28,11 +34,12 @@
 #about .introduction {
   height: 125vh;
   min-height: 700px;
+  max-height: 865px;
 }
 @media only screen and (min-width: 992px) {
   #about .introduction {
     height: calc(100vh - 113px);
-    min-height: initial;
+    min-height: 550px;
   }
 }
 #about .introduction .intro-text {
@@ -143,6 +150,59 @@
 }
 #about .call-to-action a {
   display: inline-block;
+}
+
+.intro-icons {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .intro-icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .intro-icons {
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .intro-icons {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+.intro-icons div {
+  padding-top: 0px;
+}
+@media only screen and (min-width: 1400px) {
+  .intro-icons div img {
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .intro-icons div img {
+    height: 100px;
+  }
+}
+.intro-icons div:nth-child(5) img {
+  height: 55px;
+}
+@media only screen and (min-width: 1400px) {
+  .intro-icons div:nth-child(5) img {
+    height: 63px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .intro-icons div:nth-child(5) img {
+    height: 85px;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
