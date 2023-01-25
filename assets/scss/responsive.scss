@@ -49,11 +49,11 @@ $mxl: 1800px;
 
 // common style
 .lets-talk-btn {
-  font-size: 1rem;
-  @include py(15px, 15px);
-  @include query($sm) {
-    font-size: 1.5rem;
-  }
+    font-size: 1rem;
+    @include py(15px, 15px);
+    @include query($sm) {
+        font-size: 1.5rem;
+    }
 }
 
 // about section --------
@@ -79,6 +79,7 @@ $mxl: 1800px;
     @include query($lg) {
       height: calc(100vh - 113px);
       min-height: 550px;
+        @include py(0px, 0px);
     }
     .intro-text {
       margin-top: 70px;
@@ -117,6 +118,78 @@ $mxl: 1800px;
             font-size: 2rem;
             padding: 2.5rem 0px;
           }
+        .intro-text {
+            margin-top: 70px;
+            @include query($lg) {
+                margin-top: 0px;
+            }
+            @include query($xxl) {
+                flex-basis: 55%;
+            }
+            @include query($lg) {
+                .leadership-level {
+                    font-size: 2rem;
+                    @include query($xxl) {
+                        font-size: 2.5rem;
+                    }
+                    @include query($mxl) {
+                        font-size: 3rem;
+                    }
+                }
+                .expertise {
+                    font-size: 3rem;
+                    @include query($xxl) {
+                        font-size: 3.8rem;
+                    }
+                    @include query($mxl) {
+                        font-size: 4.5rem;
+                    }
+                }
+                .when-you-need-it {
+                    font-size: 1.5rem;
+                    padding: 1.5rem 0px;
+                    @include query($xxl) {
+                        font-size: 1.8rem;
+                    }
+                    @include query($mxl) {
+                        font-size: 2rem;
+                        padding: 2.5rem 0px;
+                    }
+                }
+            }
+        }
+        .about-description {
+            margin-top: 25px;
+            margin-bottom: 35px;
+            max-width: 600px;
+            @include query($lg) {
+                font-size: 1.2rem;
+                margin-top: 0px;
+                padding-right: 40px;
+            }
+            @include query($xxl) {
+                font-size: 1.35rem;
+                max-width: initial;
+            }
+            @include query($mxl) {
+                font-size: 1.5rem;
+            }
+        }
+        .intro-image {
+            img {
+                width: 100%;
+                @include query($xl) {
+                    max-width: 500px;
+                    display: inline-block;
+                }
+                @include query($xxl) {
+                    max-width: 600px;
+                }
+                @include query($mxl) {
+                    max-width: 650px;
+                    margin-top: -50px;
+                }
+            }
         }
       }
     }
@@ -164,41 +237,104 @@ $mxl: 1800px;
 
 // intro icons
 .intro-icons {
-  @include py(50px, 50px);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 30px;
-  column-gap: 20px;
-  @include query($sm) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @include query($lg) {
-    grid-template-columns: repeat(6, 1fr);
-    @include py(65px, 65px);
-  }
-  @include query($xxl) {
-    @include py(75px, 75px);
-  }
-  div {
-    padding-top: 0px;
-    img {
-      @include query($xxl) {
-        height: 80px;
-      }
-      @include query($mxl) {
-        height: 100px;
-      }
+    @include py(50px, 50px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+    @include query($sm) {
+        grid-template-columns: repeat(3, 1fr);
     }
-    &:nth-child(5) {
-      img {
-        height: 55px;
-        @include query($xxl) {
-          height: 63px;
+    @include query($lg) {
+        grid-template-columns: repeat(6, 1fr);
+        @include py(65px, 65px);
+    }
+    @include query($xxl) {
+        @include py(75px, 75px);
+    }
+    div {
+        padding-top: 0px;
+        img {
+            @include query($xxl) {
+                height: 80px;
+            }
+            @include query($mxl) {
+                height: 100px;
+            }
+        }
+        &:nth-child(5) {
+            img {
+                height: 55px;
+                @include query($xxl) {
+                    height: 63px;
+                }
+                @include query($mxl) {
+                    height: 85px;
+                }
+            }
+        }
+    }
+}
+
+// craction cto
+
+// section padding
+%sec-padding {
+    @include py(80px, 80px);
+    @include query($lg) {
+        @include px(2rem, 2rem);
+        @include py(8rem, 8rem);
+    }
+    @include query($mxl) {
+        @include px(5rem, 5rem);
+    }
+}
+
+.services {
+    .fractional-cto {
+        @extend %sec-padding;
+    }
+}
+
+.text-wrap {
+    margin-top: 30px;
+    @include query($lg) {
+        margin-top: 45px;
+    }
+    @include query($mxl) {
+        margin-top: 60px;
+    }
+    p {
+        text-align: justify;
+        padding-bottom: 0px;
+        padding-top: 20px;
+        @include query($lg) {
+            padding-top: 30px;
+        }
+        &:first-child {
+            padding-top: 10px;
+            &::first-letter {
+                line-height: 16px;
+                font-size: 50px;
+            }
+        }
+        @include query($lg) {
+            font-size: 1.2rem;
         }
         @include query($mxl) {
-          height: 85px;
+            font-size: 1.5rem;
         }
-      }
     }
   }
+}
+
+.services {
+    .services-by-leader {
+        @extend %sec-padding;
+        padding-bottom: 40px;
+    }
+    .project-blueprints {
+        @extend %sec-padding;
+        padding-top: 0px;
+    }
 }

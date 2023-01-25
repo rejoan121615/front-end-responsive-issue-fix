@@ -40,6 +40,8 @@
   #about .introduction {
     height: calc(100vh - 113px);
     min-height: 550px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 #about .introduction .intro-text {
@@ -102,57 +104,165 @@
     padding: 2.5rem 0px;
   }
 }
-#about .introduction .about-description {
+@media only screen and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text {
+    flex-basis: 55%;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .leadership-level {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .leadership-level {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .leadership-level {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .expertise {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .expertise {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .expertise {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .when-you-need-it {
+    font-size: 1.5rem;
+    padding: 1.5rem 0px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .when-you-need-it {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .when-you-need-it .intro-text .when-you-need-it {
+    font-size: 2rem;
+    padding: 2.5rem 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .about-description {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .about-description {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .when-you-need-it .about-description {
+    font-size: 1.35rem;
+    max-width: initial;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .when-you-need-it .about-description {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about .introduction .intro-text .when-you-need-it .intro-image img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
+  #about .introduction .intro-text .when-you-need-it .intro-image img {
+    max-width: 500px;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1400px) {
+  #about .introduction .intro-text .when-you-need-it .intro-image img {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1800px) {
+  #about .introduction .intro-text .when-you-need-it .intro-image img {
+    max-width: 650px;
+    margin-top: -50px;
+  }
+}
+#about .introduction .intro-text .about-description {
   margin-top: 25px;
   margin-bottom: 35px;
   max-width: 600px;
 }
 @media only screen and (min-width: 992px) {
-  #about .introduction .about-description {
+  #about .introduction .intro-text .about-description {
     font-size: 1.2rem;
     margin-top: 0px;
     padding-right: 40px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #about .introduction .about-description {
+  #about .introduction .intro-text .about-description {
     font-size: 1.35rem;
     max-width: initial;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #about .introduction .about-description {
+  #about .introduction .intro-text .about-description {
     font-size: 1.5rem;
   }
 }
-#about .introduction .intro-image img {
+#about .introduction .intro-text .intro-image img {
   width: 100%;
 }
 @media only screen and (min-width: 1200px) {
-  #about .introduction .intro-image img {
+  #about .introduction .intro-text .intro-image img {
     max-width: 500px;
     display: inline-block;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #about .introduction .intro-image img {
+  #about .introduction .intro-text .intro-image img {
     max-width: 600px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #about .introduction .intro-image img {
+  #about .introduction .intro-text .intro-image img {
     max-width: 650px;
     margin-top: -50px;
   }
 }
-#about .call-to-action {
+#about .introduction .call-to-action {
   position: initial;
 }
-#about .call-to-action a {
+#about .introduction .call-to-action a {
   display: inline-block;
 }
-
-.intro-icons {
+#about .intro-icons {
   padding-top: 50px;
   padding-bottom: 50px;
   display: grid;
@@ -161,48 +271,113 @@
   column-gap: 20px;
 }
 @media only screen and (min-width: 576px) {
-  .intro-icons {
+  #about .intro-icons {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (min-width: 992px) {
-  .intro-icons {
+  #about .intro-icons {
     grid-template-columns: repeat(6, 1fr);
     padding-top: 65px;
     padding-bottom: 65px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .intro-icons {
+  #about .intro-icons {
     padding-top: 75px;
     padding-bottom: 75px;
   }
 }
-.intro-icons div {
+#about .intro-icons div {
   padding-top: 0px;
 }
 @media only screen and (min-width: 1400px) {
-  .intro-icons div img {
+  #about .intro-icons div img {
     height: 80px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .intro-icons div img {
+  #about .intro-icons div img {
     height: 100px;
   }
 }
-.intro-icons div:nth-child(5) img {
+#about .intro-icons div:nth-child(5) img {
   height: 55px;
 }
 @media only screen and (min-width: 1400px) {
-  .intro-icons div:nth-child(5) img {
+  #about .intro-icons div:nth-child(5) img {
     height: 63px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .intro-icons div:nth-child(5) img {
+  #about .intro-icons div:nth-child(5) img {
     height: 85px;
   }
+}
+#about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 992px) {
+  #about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+#about .text-wrap {
+  margin-top: 30px;
+}
+@media only screen and (min-width: 992px) {
+  #about .text-wrap {
+    margin-top: 45px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #about .text-wrap {
+    margin-top: 60px;
+  }
+}
+#about .text-wrap p {
+  text-align: justify;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+@media only screen and (min-width: 992px) {
+  #about .text-wrap p {
+    padding-top: 30px;
+  }
+}
+#about .text-wrap p:first-child {
+  padding-top: 10px;
+}
+#about .text-wrap p:first-child::first-letter {
+  line-height: 16px;
+  font-size: 50px;
+}
+@media only screen and (min-width: 992px) {
+  #about .text-wrap p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #about .text-wrap p {
+    font-size: 1.5rem;
+  }
+}
+
+.services .services-by-leader {
+  padding-bottom: 40px;
+}
+.services .project-blueprints {
+  padding-top: 0px;
 }
 
 /*# sourceMappingURL=responsive.css.map */
