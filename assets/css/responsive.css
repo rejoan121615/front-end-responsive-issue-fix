@@ -314,12 +314,12 @@
     height: 85px;
   }
 }
-#about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto {
+#about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto, .services #about .fractional-cto {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 @media only screen and (min-width: 992px) {
-  #about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto {
+  #about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto, .services #about .fractional-cto {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 8rem;
@@ -327,48 +327,56 @@
   }
 }
 @media only screen and (min-width: 1800px) {
-  #about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto {
+  #about .services .project-blueprints, .services #about .project-blueprints, #about .services .services-by-leader, .services #about .services-by-leader, #about .services .fractional-cto, .services #about .fractional-cto {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
-#about .text-wrap {
+
+@media only screen and (min-width: 992px) {
+  .services .fractional-cto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.text-wrap {
   margin-top: 30px;
 }
 @media only screen and (min-width: 992px) {
-  #about .text-wrap {
+  .text-wrap {
     margin-top: 45px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #about .text-wrap {
+  .text-wrap {
     margin-top: 60px;
   }
 }
-#about .text-wrap p {
+.text-wrap p {
   text-align: justify;
   padding-bottom: 0px;
   padding-top: 20px;
 }
 @media only screen and (min-width: 992px) {
-  #about .text-wrap p {
+  .text-wrap p {
     padding-top: 30px;
   }
 }
-#about .text-wrap p:first-child {
+.text-wrap p:first-child {
   padding-top: 10px;
 }
-#about .text-wrap p:first-child::first-letter {
+.text-wrap p:first-child::first-letter {
   line-height: 16px;
   font-size: 50px;
 }
 @media only screen and (min-width: 992px) {
-  #about .text-wrap p {
+  .text-wrap p {
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #about .text-wrap p {
+  .text-wrap p {
     font-size: 1.5rem;
   }
 }
@@ -378,6 +386,13 @@
 }
 .services .project-blueprints {
   padding-top: 0px;
+}
+.services .project-blueprints .project-blueprints-img {
+  text-align: center;
+}
+.services .project-blueprints .project-blueprints-img img {
+  height: initial;
+  max-width: 300px;
 }
 
 /*# sourceMappingURL=responsive.css.map */

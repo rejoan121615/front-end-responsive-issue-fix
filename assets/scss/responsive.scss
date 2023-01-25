@@ -1,10 +1,10 @@
 $grid-breakpoints: (
-  xs: 320px,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
+    xs: 320px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
 );
 
 $xs: 320px;
@@ -17,32 +17,32 @@ $mxl: 1800px;
 
 // mixing
 @mixin query($width) {
-  @media only screen and (min-width: $width) {
-    @content;
-  }
+    @media only screen and (min-width: $width) {
+        @content;
+    }
 }
 
 @mixin queryMinMax($minWidth, $maxWidth) {
-  @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
-    @content;
-  }
+    @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+        @content;
+    }
 }
 
 @mixin px($l, $r) {
-  padding-left: $l;
-  padding-right: $r;
+    padding-left: $l;
+    padding-right: $r;
 }
 @mixin py($t, $b) {
-  padding-top: $t;
-  padding-bottom: $b;
+    padding-top: $t;
+    padding-bottom: $b;
 }
 @mixin my($t, $b) {
-  margin-top: $t;
-  margin-bottom: $b;
+    margin-top: $t;
+    margin-bottom: $b;
 }
 @mixin mx($l, $r) {
-  margin-left: $l;
-  margin-bottom: $b;
+    margin-left: $l;
+    margin-bottom: $b;
 }
 
 // <-------- responsive styles ------------->
@@ -58,66 +58,29 @@ $mxl: 1800px;
 
 // about section --------
 .nav {
-  @include queryMinMax($lg, $xl) {
-    padding: 1rem 2rem;
-  }
-  @include query($xl) {
-    padding: 2rem 4rem;
-  }
+    @include queryMinMax($lg, $xl) {
+        padding: 1rem 2rem;
+    }
+    @include query($xl) {
+        padding: 2rem 4rem;
+    }
 }
 #about {
-  @include queryMinMax($lg, $xl) {
-    padding: 0rem 2rem;
-  }
-  @include query($lg) {
-    @include py(0px, 0px);
-  }
-  .introduction {
-    height: 125vh;
-    min-height: 700px;
-    max-height: 865px;
+    @include queryMinMax($lg, $xl) {
+        padding: 0rem 2rem;
+    }
     @include query($lg) {
-      height: calc(100vh - 113px);
-      min-height: 550px;
         @include py(0px, 0px);
     }
-    .intro-text {
-      margin-top: 70px;
-      @include query($lg) {
-        margin-top: 0px;
-      }
-      @include query($xxl) {
-        flex-basis: 55%;
-      }
-      @include query($lg) {
-        .leadership-level {
-          font-size: 2rem;
-          @include query($xxl) {
-            font-size: 2.5rem;
-          }
-          @include query($mxl) {
-            font-size: 3rem;
-          }
+    .introduction {
+        height: 125vh;
+        min-height: 700px;
+        max-height: 865px;
+        @include query($lg) {
+            height: calc(100vh - 113px);
+            min-height: 550px;
+            @include py(0px, 0px);
         }
-        .expertise {
-          font-size: 3rem;
-          @include query($xxl) {
-            font-size: 3.8rem;
-          }
-          @include query($mxl) {
-            font-size: 4.5rem;
-          }
-        }
-        .when-you-need-it {
-          font-size: 1.5rem;
-          padding: 1.5rem 0px;
-          @include query($xxl) {
-            font-size: 1.8rem;
-          }
-          @include query($mxl) {
-            font-size: 2rem;
-            padding: 2.5rem 0px;
-          }
         .intro-text {
             margin-top: 70px;
             @include query($lg) {
@@ -155,144 +118,185 @@ $mxl: 1800px;
                         font-size: 2rem;
                         padding: 2.5rem 0px;
                     }
+                    .intro-text {
+                        margin-top: 70px;
+                        @include query($lg) {
+                            margin-top: 0px;
+                        }
+                        @include query($xxl) {
+                            flex-basis: 55%;
+                        }
+                        @include query($lg) {
+                            .leadership-level {
+                                font-size: 2rem;
+                                @include query($xxl) {
+                                    font-size: 2.5rem;
+                                }
+                                @include query($mxl) {
+                                    font-size: 3rem;
+                                }
+                            }
+                            .expertise {
+                                font-size: 3rem;
+                                @include query($xxl) {
+                                    font-size: 3.8rem;
+                                }
+                                @include query($mxl) {
+                                    font-size: 4.5rem;
+                                }
+                            }
+                            .when-you-need-it {
+                                font-size: 1.5rem;
+                                padding: 1.5rem 0px;
+                                @include query($xxl) {
+                                    font-size: 1.8rem;
+                                }
+                                @include query($mxl) {
+                                    font-size: 2rem;
+                                    padding: 2.5rem 0px;
+                                }
+                            }
+                        }
+                    }
+                    .about-description {
+                        margin-top: 25px;
+                        margin-bottom: 35px;
+                        max-width: 600px;
+                        @include query($lg) {
+                            font-size: 1.2rem;
+                            margin-top: 0px;
+                            padding-right: 40px;
+                        }
+                        @include query($xxl) {
+                            font-size: 1.35rem;
+                            max-width: initial;
+                        }
+                        @include query($mxl) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .intro-image {
+                        img {
+                            width: 100%;
+                            @include query($xl) {
+                                max-width: 500px;
+                                display: inline-block;
+                            }
+                            @include query($xxl) {
+                                max-width: 600px;
+                            }
+                            @include query($mxl) {
+                                max-width: 650px;
+                                margin-top: -50px;
+                            }
+                        }
+                    }
                 }
             }
-        }
-        .about-description {
-            margin-top: 25px;
-            margin-bottom: 35px;
-            max-width: 600px;
-            @include query($lg) {
-                font-size: 1.2rem;
-                margin-top: 0px;
-                padding-right: 40px;
-            }
-            @include query($xxl) {
-                font-size: 1.35rem;
-                max-width: initial;
-            }
-            @include query($mxl) {
-                font-size: 1.5rem;
-            }
-        }
-        .intro-image {
-            img {
-                width: 100%;
-                @include query($xl) {
-                    max-width: 500px;
-                    display: inline-block;
+            .about-description {
+                margin-top: 25px;
+                margin-bottom: 35px;
+                max-width: 600px;
+                @include query($lg) {
+                    font-size: 1.2rem;
+                    margin-top: 0px;
+                    padding-right: 40px;
                 }
                 @include query($xxl) {
-                    max-width: 600px;
+                    font-size: 1.35rem;
+                    max-width: initial;
                 }
                 @include query($mxl) {
-                    max-width: 650px;
-                    margin-top: -50px;
+                    font-size: 1.5rem;
+                }
+            }
+            .intro-image {
+                img {
+                    width: 100%;
+                    @include query($xl) {
+                        max-width: 500px;
+                        display: inline-block;
+                    }
+                    @include query($xxl) {
+                        max-width: 600px;
+                    }
+                    @include query($mxl) {
+                        max-width: 650px;
+                        margin-top: -50px;
+                    }
                 }
             }
         }
-      }
+        .call-to-action {
+            position: initial;
+            a {
+                display: inline-block;
+            }
+        }
     }
-    .about-description {
-      margin-top: 25px;
-      margin-bottom: 35px;
-      max-width: 600px;
-      @include query($lg) {
-        font-size: 1.2rem;
-        margin-top: 0px;
-        padding-right: 40px;
-      }
-      @include query($xxl) {
-        font-size: 1.35rem;
-        max-width: initial;
-      }
-      @include query($mxl) {
-        font-size: 1.5rem;
-      }
-    }
-    .intro-image {
-      img {
-        width: 100%;
-        @include query($xl) {
-          max-width: 500px;
-          display: inline-block;
+
+    // intro icons
+    .intro-icons {
+        @include py(50px, 50px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+        @include query($sm) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include query($lg) {
+            grid-template-columns: repeat(6, 1fr);
+            @include py(65px, 65px);
         }
         @include query($xxl) {
-          max-width: 600px;
+            @include py(75px, 75px);
         }
-        @include query($mxl) {
-          max-width: 650px;
-          margin-top: -50px;
-        }
-      }
-    }
-  }
-  .call-to-action {
-    position: initial;
-    a {
-      display: inline-block;
-    }
-  }
-}
-
-// intro icons
-.intro-icons {
-    @include py(50px, 50px);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
-    column-gap: 20px;
-    @include query($sm) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    @include query($lg) {
-        grid-template-columns: repeat(6, 1fr);
-        @include py(65px, 65px);
-    }
-    @include query($xxl) {
-        @include py(75px, 75px);
-    }
-    div {
-        padding-top: 0px;
-        img {
-            @include query($xxl) {
-                height: 80px;
-            }
-            @include query($mxl) {
-                height: 100px;
-            }
-        }
-        &:nth-child(5) {
+        div {
+            padding-top: 0px;
             img {
-                height: 55px;
                 @include query($xxl) {
-                    height: 63px;
+                    height: 80px;
                 }
                 @include query($mxl) {
-                    height: 85px;
+                    height: 100px;
+                }
+            }
+            &:nth-child(5) {
+                img {
+                    height: 55px;
+                    @include query($xxl) {
+                        height: 63px;
+                    }
+                    @include query($mxl) {
+                        height: 85px;
+                    }
                 }
             }
         }
     }
-}
 
-// craction cto
+    // craction cto
 
-// section padding
-%sec-padding {
-    @include py(80px, 80px);
-    @include query($lg) {
-        @include px(2rem, 2rem);
-        @include py(8rem, 8rem);
-    }
-    @include query($mxl) {
-        @include px(5rem, 5rem);
+    // section padding
+    %sec-padding {
+        @include py(80px, 80px);
+        @include query($lg) {
+            @include px(2rem, 2rem);
+            @include py(8rem, 8rem);
+        }
+        @include query($mxl) {
+            @include px(5rem, 5rem);
+        }
     }
 }
 
 .services {
     .fractional-cto {
         @extend %sec-padding;
+        @include query($lg) {
+            @include px(2rem, 2rem);
+        }
     }
 }
 
@@ -325,9 +329,7 @@ $mxl: 1800px;
             font-size: 1.5rem;
         }
     }
-  }
 }
-
 .services {
     .services-by-leader {
         @extend %sec-padding;
@@ -336,5 +338,12 @@ $mxl: 1800px;
     .project-blueprints {
         @extend %sec-padding;
         padding-top: 0px;
+        .project-blueprints-img {
+            text-align: center;
+            img {
+                height: initial;
+                max-width: 300px;
+            }
+        }
     }
 }
