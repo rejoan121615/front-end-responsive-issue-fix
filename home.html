@@ -1,66 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-        <!-- Favicons -->
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/images/favicon-16x16.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/images/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="96x96"
-            href="./assets/images/favicon-96x96.png"
-        />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/images/favicon-96x96.png"
+    />
 
-        <!-- Preview -->
-        <title>Visiting CTO</title>
-        <meta property="og:title" content="Visiting CTO" />
-        <meta name="twitter:title" content="Visiting CTO" />
+    <!-- Preview -->
+    <title>Visiting CTO</title>
+    <meta property="og:title" content="Visiting CTO" />
+    <meta name="twitter:title" content="Visiting CTO" />
 
-        <meta
-            name="description"
-            content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
-        />
-        <meta
-            property="og:description"
-            content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
-        />
-        <meta
-            name="twitter:description"
-            content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
-        />
+    <meta
+      name="description"
+      content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
+    />
+    <meta
+      property="og:description"
+      content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
+    />
+    <meta
+      name="twitter:description"
+      content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
+    />
 
-        <meta property="og:image" content="/assets/images/hero.svg" />
-        <meta name="twitter:image" content="/assets/images/hero.svg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-</head>
-<body>
-    
-</body>
+    <meta property="og:image" content="/assets/images/hero.svg" />
+    <meta name="twitter:image" content="/assets/images/hero.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">
+            Visting
+            <span>CTO</span>
+          </div>
+          <div>
+            <ul id="nav-ul">
+              <li class="nav-item">
+                <a
+                  href="#about"
+                  class="nav-link hover-underline-animation"
+                  id="nav-link"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#services"
+                  class="nav-link hover-underline-animation"
+                  id="nav-link"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#technology"
+                  class="nav-link hover-underline-animation"
+                  id="nav-link"
+                  >Technology</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#lets-talk" class="lets-talk-btn"> Let's Talk </a>
+              </li>
+            </ul>
+          </div>
+          <div id="menu" class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>
+              <span class="leadership-level">LEADERSHIP-LEVEL</span>
+              <br />
+              <span class="expertise">EXPERTISE</span>
+            </h1>
+            <h2 class="when-you-need-it">
+              <span class="when-you-need-it">WHEN YOU NEED IT</span>
+            </h2>
+            <p class="about-description">
+              We provide on-demand leadership-level experts in software
+              development for projects large and small - including ideation,
+              planning, development and maintenance.
+            </p>
+            <div class="call-to-action">
+              <a href="#lets-talk" class="lets-talk-btn"> Let's Talk </a>
+            </div>
+          </div>
+          <div class="intro-image">
+            <img src="./assets/images/hero.svg" />
+          </div>
+        </div>
+
+        <div class="intro-icons">
+          <div>
+            <img src="./assets/images/icon_mobile.svg" />
+            <span
+              >Mobile <br />
+              Apps</span
+            >
+          </div>
+          <div>
+            <img src="./assets/images/icon_enterprise.svg" />
+            <span
+              >Enterprise <br />
+              Software</span
+            >
+          </div>
+          <div>
+            <img src="./assets/images/icon_ai.svg" />
+            <span
+              >Artificial <br />
+              Intelligence</span
+            >
+          </div>
+          <div>
+            <img src="./assets/images/icon_data.svg" />
+            <span
+              >Big <br />
+              Data</span
+            >
+          </div>
+          <div>
+            <img src="./assets/images/icon_analytics.svg" />
+            <span
+              >Business <br />
+              Analytics</span
+            >
+          </div>
+          <div>
+            <img src="./assets/images/icon_project.svg" />
+            <span
+              >Your Next <br />
+              Project</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
