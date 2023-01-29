@@ -1,0 +1,11 @@
+// mixing
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin py($t: 0, $b: 0) {
+    padding-top: $t;
+    padding-bottom: $b;
+}

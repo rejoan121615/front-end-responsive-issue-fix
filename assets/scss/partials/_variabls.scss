@@ -1,0 +1,17 @@
+/* CSS Variables */
+:root {
+    --normal-font: 400;
+    --medium-font: 500;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --transition: 0.4s ease-in;
+    --line-height: 1.8;
+}
+
+// responsive variable
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$mxl: 1800px;

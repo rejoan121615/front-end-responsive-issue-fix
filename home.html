@@ -1,561 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Favicons -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/images/favicon-16x16.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/images/favicon-96x96.png"
+        />
+        <title>Visiting CTO</title>
+        <meta property="og:title" content="Visiting CTO" />
+        <meta name="twitter:title" content="Visiting CTO" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
-      rel="stylesheet"
-    />
+        <meta
+            name="description"
+            content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
+        />
+        <meta
+            property="og:description"
+            content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
+        />
+        <meta
+            name="twitter:description"
+            content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
+        />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./assets/images/favicon-96x96.png"
-    />
-
-    <!-- Preview -->
-    <title>Visiting CTO</title>
-    <meta property="og:title" content="Visiting CTO" />
-    <meta name="twitter:title" content="Visiting CTO" />
-
-    <meta
-      name="description"
-      content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
-    />
-    <meta
-      property="og:description"
-      content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
-    />
-    <meta
-      name="twitter:description"
-      content="We provide on-demand leadership-level experts in software development for projects large and small - including ideation, planning, development and maintenance."
-    />
-
-    <meta property="og:image" content="/assets/images/hero.svg" />
-    <meta name="twitter:image" content="/assets/images/hero.svg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <nav class="nav">
-          <div class="logo">
-            Visting
-            <span>CTO</span>
-          </div>
-          <div>
-            <ul id="nav-ul">
-              <li class="nav-item">
-                <a
-                  href="#about"
-                  class="nav-link hover-underline-animation"
-                  id="nav-link"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#services"
-                  class="nav-link hover-underline-animation"
-                  id="nav-link"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#technology"
-                  class="nav-link hover-underline-animation"
-                  id="nav-link"
-                  >Technology</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#lets-talk" class="lets-talk-btn"> Let's Talk </a>
-              </li>
-            </ul>
-          </div>
-          <div id="menu" class="hamburger-menu" onclick="toggleMenu()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Main -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="introduction">
-          <div class="intro-text">
-            <h1>
-              <span class="leadership-level">LEADERSHIP-LEVEL</span>
-              <br />
-              <span class="expertise">EXPERTISE</span>
-            </h1>
-            <h2 class="when-you-need-it">
-              <span class="when-you-need-it">WHEN YOU NEED IT</span>
-            </h2>
-            <p class="about-description">
-              We provide on-demand leadership-level experts in software
-              development for projects large and small - including ideation,
-              planning, development and maintenance.
-            </p>
-            <div class="call-to-action">
-              <a href="#lets-talk" class="lets-talk-btn"> Let's Talk </a>
+        <meta property="og:image" content="/assets/images/hero.svg" />
+        <meta name="twitter:image" content="/assets/images/hero.svg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/home.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <div class="logo">
+                        Visting
+                        <span>CTO</span>
+                    </div>
+                    <ul id="nav-ul">
+                            <li class="nav-item">
+                                <a
+                                    href="#about"
+                                    class="nav-link hover-underline-animation"
+                                    id="nav-link"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="#services"
+                                    class="nav-link hover-underline-animation"
+                                    id="nav-link"
+                                    >Services</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="#technology"
+                                    class="nav-link hover-underline-animation"
+                                    id="nav-link"
+                                    >Technology</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#lets-talk" class="lets-talk-btn">
+                                    Let's Talk
+                                </a>
+                            </li>
+                        </ul>
+                    <div
+                        id="menu"
+                        class="hamburger-menu"
+                        onclick="toggleMenu()"
+                    >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </nav>
             </div>
-          </div>
-          <div class="intro-image">
-            <img src="./assets/images/hero.svg" />
-          </div>
-        </div>
+        </header>
 
-        <div class="intro-icons">
-          <div>
-            <img src="./assets/images/icon_mobile.svg" />
-            <span
-              >Mobile <br />
-              Apps</span
-            >
-          </div>
-          <div>
-            <img src="./assets/images/icon_enterprise.svg" />
-            <span
-              >Enterprise <br />
-              Software</span
-            >
-          </div>
-          <div>
-            <img src="./assets/images/icon_ai.svg" />
-            <span
-              >Artificial <br />
-              Intelligence</span
-            >
-          </div>
-          <div>
-            <img src="./assets/images/icon_data.svg" />
-            <span
-              >Big <br />
-              Data</span
-            >
-          </div>
-          <div>
-            <img src="./assets/images/icon_analytics.svg" />
-            <span
-              >Business <br />
-              Analytics</span
-            >
-          </div>
-          <div>
-            <img src="./assets/images/icon_project.svg" />
-            <span
-              >Your Next <br />
-              Project</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Main -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h1>
+                            <span class="leadership-level"
+                                >LEADERSHIP-LEVEL</span
+                            >
+                            <br />
+                            <span class="expertise">EXPERTISE</span>
+                        </h1>
+                        <h2 class="when-you-need-it">
+                            <span class="when-you-need-it"
+                                >WHEN YOU NEED IT</span
+                            >
+                        </h2>
+                        <p class="about-description">
+                            We provide on-demand leadership-level experts in
+                            software development for projects large and small -
+                            including ideation, planning, development and
+                            maintenance.
+                        </p>
+                        <div class="call-to-action">
+                            <a href="#lets-talk" class="lets-talk-btn">
+                                Let's Talk
+                            </a>
+                        </div>
+                    </div>
+                    <div class="intro-image">
+                        <img src="./assets/images/hero.svg" />
+                    </div>
+                </div>
 
-    <!-- FRACTIONAL CTO -->
-    <section class="services">
-      <div class="container">
-        <div class="fractional-cto">
-          <h1>
-            <span>FRACTIONAL CTO</span>
-          </h1>
-          <div class="text-wrap">
-            <p>
-              A fractional chief technology officer manages technology for a
-              company on a temporary or part-time basis when the company lacks a
-              full-time executive, is in-between hires, needs additional
-              bandwidth at the leadership level or just needs a second look to
-              verify its current plans and decision making.
-            </p>
-            <p>
-              Fractional CTOs often have a greater breadth of knowledge and
-              larger resource network than traditional CTOs due to their
-              engaging a greater number of clients thoughout their career, often
-              having already succeeded in several traditional leadership-level
-              roles. <br />
-            </p>
-            <p>
-              Return on investment is expected to be high, as the fractional CTO
-              can accelerate new or languishing projects and help the client
-              company avoid costly mistakes. Fractional CTOs might also be
-              called on-demand, interim, virtual or part-time.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+                <div class="intro-icons">
+                    <div>
+                        <img src="./assets/images/icon_mobile.svg" />
+                        <span
+                            >Mobile <br />
+                            Apps</span
+                        >
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_enterprise.svg" />
+                        <span
+                            >Enterprise <br />
+                            Software</span
+                        >
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_ai.svg" />
+                        <span
+                            >Artificial <br />
+                            Intelligence</span
+                        >
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_data.svg" />
+                        <span
+                            >Big <br />
+                            Data</span
+                        >
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_analytics.svg" />
+                        <span
+                            >Business <br />
+                            Analytics</span
+                        >
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_project.svg" />
+                        <span
+                            >Your Next <br />
+                            Project</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Services Head -->
-    <section class="services">
-      <div class="container">
-        <div id="services" class="services-by-leader">
-          <h1>
-            <span>SERVICES BY LEADERS, FOR LEADERS</span>
-          </h1>
-        </div>
-      </div>
-    </section>
+        <!-- FRACTIONAL CTO -->
+        <section class="services">
+            <div class="container">
+                <div class="fractional-cto">
+                    <h1>
+                        <span>FRACTIONAL CTO</span>
+                    </h1>
+                    <div class="text-wrap">
+                        <p>
+                            A fractional chief technology officer manages
+                            technology for a company on a temporary or part-time
+                            basis when the company lacks a full-time executive,
+                            is in-between hires, needs additional bandwidth at
+                            the leadership level or just needs a second look to
+                            verify its current plans and decision making.
+                        </p>
+                        <p>
+                            Fractional CTOs often have a greater breadth of
+                            knowledge and larger resource network than
+                            traditional CTOs due to their engaging a greater
+                            number of clients thoughout their career, often
+                            having already succeeded in several traditional
+                            leadership-level roles. <br />
+                        </p>
+                        <p>
+                            Return on investment is expected to be high, as the
+                            fractional CTO can accelerate new or languishing
+                            projects and help the client company avoid costly
+                            mistakes. Fractional CTOs might also be called
+                            on-demand, interim, virtual or part-time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- All Secvices -->
-    <section class="services">
-      <div class="container">
-        <!-- Project Blueprints -->
-        <div class="project-blueprints">
-          <div class="project-blueprints-text">
-            <h1>
-              <span>Project Blueprints</span>
-            </h1>
-            <div class="text-wrap">
-              <p>
-                We excel at planning. Wether you are a startup or a mature
-                enterprise, proper planning saves you considerable time and
-                money.
-              </p>
-              <p>
-                You’ll receive engineering-ready wireframes, feature
-                descriptions, acceptance criteria and draft database or
-                architectural diagrams in just a few short weeks - not months!
-              </p>
-              <!-- <p>
+        <!-- Services Head -->
+        <section class="services">
+            <div class="container">
+                <div id="services" class="services-by-leader">
+                    <h1>
+                        <span>SERVICES BY LEADERS, FOR LEADERS</span>
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Secvices -->
+        <section class="services">
+            <div class="container">
+                <!-- Project Blueprints -->
+                <div class="project-blueprints">
+                    <div class="project-blueprints-text">
+                        <h1>
+                            <span>Project Blueprints</span>
+                        </h1>
+                        <div class="text-wrap">
+                            <p>
+                                We excel at planning. Wether you are a startup
+                                or a mature enterprise, proper planning saves
+                                you considerable time and money.
+                            </p>
+                            <p>
+                                You’ll receive engineering-ready wireframes,
+                                feature descriptions, acceptance criteria and
+                                draft database or architectural diagrams in just
+                                a few short weeks - not months!
+                            </p>
+                            <!-- <p>
                 We typically ideate with our clients, significantly improving on
                 their initial vision by bringing together their intuition and
                 hands-on experience with our strategic insights and technical
                 expertise in their market.
               </p> -->
-            </div>
-          </div>
-          <div class="project-blueprints-img">
-            <img src="./assets/images/inset_blueprints.svg" />
-          </div>
-        </div>
+                        </div>
+                    </div>
+                    <div class="project-blueprints-img">
+                        <img src="./assets/images/inset_blueprints.svg" />
+                    </div>
+                </div>
 
-        <!-- Hourly CTO -->
-        <div class="hourly-cto">
-          <div class="hourly-cto-img">
-            <img src="./assets/images/inset_hourly.svg" />
-          </div>
-          <div class="hourly-cto-text">
-            <h1>
-              <span>Hourly CTO</span>
-            </h1>
-            <div class="text-wrap">
-              <p>
-                Sometimes you just need a little extra help to get past the
-                finish line. We accelerate your projects by temporarily stepping
-                into a staff role, freeing you to focus on other important
-                matters.
-              </p>
-              <p>
-                During our stay, we’re often asked by our clients to focus on
-                project oversight, technology guidance, and agile coaching.
-                These areas help accelerate new and existing projects and often
-                achieve considerable savings.
-              </p>
-              <!-- <p>
+                <!-- Hourly CTO -->
+                <div class="hourly-cto">
+                    <div class="hourly-cto-img">
+                        <img src="./assets/images/inset_hourly.svg" />
+                    </div>
+                    <div class="hourly-cto-text">
+                        <h1>
+                            <span>Hourly CTO</span>
+                        </h1>
+                        <div class="text-wrap">
+                            <p>
+                                Sometimes you just need a little extra help to
+                                get past the finish line. We accelerate your
+                                projects by temporarily stepping into a staff
+                                role, freeing you to focus on other important
+                                matters.
+                            </p>
+                            <p>
+                                During our stay, we’re often asked by our
+                                clients to focus on project oversight,
+                                technology guidance, and agile coaching. These
+                                areas help accelerate new and existing projects
+                                and often achieve considerable savings.
+                            </p>
+                            <!-- <p>
                 We can also take a second look at technology resourcing and
                 planning to validate current decision making; or perform a deep
                 analysis of a client’s technology and staff so that we might act
                 as a backstop should a catastrophic event occur.
               </p> -->
-            </div>
-          </div>
-        </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Development Resources -->
-        <div class="development-resources">
-          <div class="development-resources-text">
-            <h1>
-              <span>Development Resources</span>
-            </h1>
-            <div class="text-wrap">
-              <p>
-                Having the right resources when you need them is essential to
-                the success of any project. We leverage our trusted network of
-                individual and agency-based contributors for your benefit.
-              </p>
-              <p>
-                Our network of engineers are proficient in web and mobile app
-                development, machine learning, analytics, quality assurance and
-                devops to name a few - all with little to no commitment, so you
-                can scale up and down to suit your needs.
-              </p>
-              <!-- <p>
+                <!-- Development Resources -->
+                <div class="development-resources">
+                    <div class="development-resources-text">
+                        <h1>
+                            <span>Development Resources</span>
+                        </h1>
+                        <div class="text-wrap">
+                            <p>
+                                Having the right resources when you need them is
+                                essential to the success of any project. We
+                                leverage our trusted network of individual and
+                                agency-based contributors for your benefit.
+                            </p>
+                            <p>
+                                Our network of engineers are proficient in web
+                                and mobile app development, machine learning,
+                                analytics, quality assurance and devops to name
+                                a few - all with little to no commitment, so you
+                                can scale up and down to suit your needs.
+                            </p>
+                            <!-- <p>
                     Wether you need one developer or an entire team, we can quickly
                     source engineers whom we’ve worked with in the past or qualify
                     those who are new to us, significantly lowering the risk of a bad
                     hire while accelerating your project timelines.
                   </p>
                  -->
+                        </div>
+                    </div>
+                    <div class="development-resources-img">
+                        <img src="./assets/images/inset_rocket.svg" />
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="development-resources-img">
-            <img src="./assets/images/inset_rocket.svg" />
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Modern Technology -->
-    <section id="technology" class="technology">
-      <div class="container">
-        <div class="tech-stack">
-          <h1>
-            <span>WE USE A MODERN TECHNOLOGY STACK</span>
-          </h1>
-        </div>
-        <div class="tech-stack-icons intro-icons">
-          <div>
-            <img src="./assets/images/icon_javascript.svg" />
-            <span>Javascript</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_reactjs.svg" />
-            <span>React.js</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_flutter.svg" />
-            <span>Flutter</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_nodejs.svg" />
-            <span>Node.js</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_python.svg" />
-            <span>Python</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_sequelize.svg" />
-            <span>Sequelize</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_postgres.svg" />
-            <span>Postgres</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_redis.svg" />
-            <span>Redis</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_elasticsearch.svg" />
-            <span>Elasticsearch</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_spark.svg" />
-            <span>Apache Spark</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_kubernetes.svg" />
-            <span>Kubernetes</span>
-          </div>
-          <div>
-            <img src="./assets/images/icon_aws.svg" />
-            <span>AWS</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Modern Technology -->
+        <section id="technology" class="technology">
+            <div class="container">
+                <div class="tech-stack">
+                    <h1>
+                        <span>WE USE A MODERN TECHNOLOGY STACK</span>
+                    </h1>
+                </div>
+                <div class="tech-stack-icons intro-icons">
+                    <div>
+                        <img src="./assets/images/icon_javascript.svg" />
+                        <span>Javascript</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_reactjs.svg" />
+                        <span>React.js</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_flutter.svg" />
+                        <span>Flutter</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_nodejs.svg" />
+                        <span>Node.js</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_python.svg" />
+                        <span>Python</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_sequelize.svg" />
+                        <span>Sequelize</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_postgres.svg" />
+                        <span>Postgres</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_redis.svg" />
+                        <span>Redis</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_elasticsearch.svg" />
+                        <span>Elasticsearch</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_spark.svg" />
+                        <span>Apache Spark</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_kubernetes.svg" />
+                        <span>Kubernetes</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon_aws.svg" />
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- CLIENT SATISFACTION -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <div class="testimonials-head">
-          <h1>
-            <span>CLIENT SATISFACTION IS OUR PASSION</span>
-          </h1>
-        </div>
-        <div class="testimonials-card" id="testimonials-container">
-          <div class="card">
-            <div class="head">
-              <img src="./assets/images/decoration_quotes.svg" />
-            </div>
-            <div class="body">
-              We have worked with VisitingCTO on a number of projects and it has
-              been seamless.
-            </div>
-            <div class="footer">
-              <p>Chris D</p>
-              <span>CEO</span>
-            </div>
-          </div>
+        <!-- CLIENT SATISFACTION -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="testimonials-head">
+                    <h1>
+                        <span>CLIENT SATISFACTION IS OUR PASSION</span>
+                    </h1>
+                </div>
+                <div class="testimonials-card" id="testimonials-container">
+                    <div class="card">
+                        <div class="head">
+                            <img src="./assets/images/decoration_quotes.svg" />
+                        </div>
+                        <div class="body">
+                            We have worked with VisitingCTO on a number of
+                            projects and it has been seamless.
+                        </div>
+                        <div class="footer">
+                            <p>Chris D</p>
+                            <span>CEO</span>
+                        </div>
+                    </div>
 
-          <div class="card">
-            <div class="head">
-              <img src="./assets/images/decoration_quotes.svg" />
-            </div>
-            <div class="body">
-              The guidance we received was extremely valuable while launching
-              our company.
-            </div>
-            <div class="footer">
-              <p>Jay G</p>
-              <span>Founder</span>
-            </div>
-          </div>
+                    <div class="card">
+                        <div class="head">
+                            <img src="./assets/images/decoration_quotes.svg" />
+                        </div>
+                        <div class="body">
+                            The guidance we received was extremely valuable
+                            while launching our company.
+                        </div>
+                        <div class="footer">
+                            <p>Jay G</p>
+                            <span>Founder</span>
+                        </div>
+                    </div>
 
-          <div class="card">
-            <div class="head">
-              <img src="./assets/images/decoration_quotes.svg" />
-            </div>
-            <div class="body">
-              VisitingCTO's knowledge and experience, attention to detail, and
-              sense of urgency is such a breath of fresh air in the tech space.
-            </div>
-            <div class="footer">
-              <p>James F</p>
-              <span>CEO</span>
-            </div>
-          </div>
+                    <div class="card">
+                        <div class="head">
+                            <img src="./assets/images/decoration_quotes.svg" />
+                        </div>
+                        <div class="body">
+                            VisitingCTO's knowledge and experience, attention to
+                            detail, and sense of urgency is such a breath of
+                            fresh air in the tech space.
+                        </div>
+                        <div class="footer">
+                            <p>James F</p>
+                            <span>CEO</span>
+                        </div>
+                    </div>
 
-          <div class="card">
-            <div class="head">
-              <img src="./assets/images/decoration_quotes.svg" />
-            </div>
-            <div class="body">
-              Their leadership led to important technical changes that had been
-              languishing for months in a very change averse company.
-            </div>
-            <div class="footer">
-              <p>Rebecca T</p>
-              <span>Engineer</span>
-            </div>
-          </div>
+                    <div class="card">
+                        <div class="head">
+                            <img src="./assets/images/decoration_quotes.svg" />
+                        </div>
+                        <div class="body">
+                            Their leadership led to important technical changes
+                            that had been languishing for months in a very
+                            change averse company.
+                        </div>
+                        <div class="footer">
+                            <p>Rebecca T</p>
+                            <span>Engineer</span>
+                        </div>
+                    </div>
 
-          <div class="card">
-            <div class="head">
-              <img src="./assets/images/decoration_quotes.svg" />
-            </div>
-            <div class="body">
-              Not only does VisitingCTO finish projects on time, but they come
-              in under budget too.
-            </div>
-            <div class="footer">
-              <p>Krishna M</p>
-              <span>CTO</span>
-            </div>
-          </div>
+                    <div class="card">
+                        <div class="head">
+                            <img src="./assets/images/decoration_quotes.svg" />
+                        </div>
+                        <div class="body">
+                            Not only does VisitingCTO finish projects on time,
+                            but they come in under budget too.
+                        </div>
+                        <div class="footer">
+                            <p>Krishna M</p>
+                            <span>CTO</span>
+                        </div>
+                    </div>
 
-          <div class="card">
-            <div class="head">
-              <img src="./assets/images/decoration_quotes.svg" />
+                    <div class="card">
+                        <div class="head">
+                            <img src="./assets/images/decoration_quotes.svg" />
+                        </div>
+                        <div class="body">
+                            I highly recommend working with them!
+                        </div>
+                        <div class="footer">
+                            <p>David S</p>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="body">I highly recommend working with them!</div>
-            <div class="footer">
-              <p>David S</p>
-              <span>CEO</span>
+        </section>
+
+        <!-- Form -->
+        <section id="lets-talk" class="lets-talk">
+            <div class="container">
+                <div class="lets-talk-bg-blue"></div>
+                <div class="lets-talk-bg-white"></div>
+                <div class="lets-talk-form">
+                    <div class="form-text">
+                        <img src="./assets/images/decoration_rocket.svg" />
+                        <p>Get started with a FREE 30-minute consultation</p>
+                    </div>
+                    <div class="form-input">
+                        <form action="">
+                            <div class="input_wrap">
+                                <input type="text" placeholder="Your Name" />
+                                <input
+                                    type="email"
+                                    placeholder="Your Address"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Phone Number"
+                                />
+                                <textarea
+                                    name=""
+                                    id=""
+                                    cols="30"
+                                    rows="6"
+                                    placeholder="Please tell us how we can help. We'll respond within 24 hours."
+                                ></textarea>
+                            </div>
+                            <div class="btn_wrap">
+                                <button>Let's Talk</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Form -->
-    <section id="lets-talk" class="lets-talk">
-      <div class="container">
-        <div class="lets-talk-bg-blue"></div>
-        <div class="lets-talk-bg-white"></div>
-        <div class="lets-talk-form">
-          <div class="form-text">
-            <img src="./assets/images/decoration_rocket.svg" />
-            <p>Get started with a FREE 30-minute consultation</p>
-          </div>
-          <div class="form-input">
-            <form action="">
-              <div class="input_wrap">
-                <input type="text" placeholder="Your Name" />
-                <input type="email" placeholder="Your Address" />
-                <input type="number" placeholder="Phone Number" />
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="6"
-                  placeholder="Please tell us how we can help. We'll respond within 24 hours."
-                ></textarea>
-              </div>
-              <div class="btn_wrap">
-                <button>Let's Talk</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="logo">Visting <span>CTO</span></div>
+                    <div class="terms">
+                        <p>© 2023 VisitingCTO, LLC</p>
+                        <p>
+                            <span>
+                                <a href="terms.pdf" target="_blank"
+                                    >Legal Terms</a
+                                >
+                            </span>
+                            &
+                            <span>
+                                <a href="privacy.pdf" target="_blank"
+                                    >Privacy Policy</a
+                                >
+                            </span>
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a
+                            href="https://facebook.com/visitingcto"
+                            target="_blank"
+                        >
+                            <img
+                                src="./assets/images/icon_facebook.svg"
+                                alt="facebook-logo"
+                            />
+                        </a>
+                        <a
+                            href="https://instagram.com/visitingcto"
+                            target="_blank"
+                        >
+                            <img src="./assets/images/icon_instagram.svg" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/company/visitingcto"
+                            target="_blank"
+                        >
+                            <img src="./assets/images/icon_linkedin.svg" />
+                        </a>
+                        <a
+                            href="https://twitter.com/visitingcto"
+                            target="_blank"
+                        >
+                            <img src="./assets/images/icon_twitter.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-container">
-          <div class="logo">Visting <span>CTO</span></div>
-          <div class="terms">
-            <p>© 2023 VisitingCTO, LLC</p>
-            <p>
-              <span>
-                <a href="terms.pdf" target="_blank">Legal Terms</a>
-              </span>
-              &
-              <span>
-                <a href="privacy.pdf" target="_blank">Privacy Policy</a>
-              </span>
-            </p>
-          </div>
-          <div class="social">
-            <a href="https://facebook.com/visitingcto" target="_blank">
-              <img
-                src="./assets/images/icon_facebook.svg"
-                alt="facebook-logo"
-              />
-            </a>
-            <a href="https://instagram.com/visitingcto" target="_blank">
-              <img src="./assets/images/icon_instagram.svg" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/visitingcto"
-              target="_blank"
-            >
-              <img src="./assets/images/icon_linkedin.svg" />
-            </a>
-            <a href="https://twitter.com/visitingcto" target="_blank">
-              <img src="./assets/images/icon_twitter.svg" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- script -->
-    <script src="assets/js/app.js"></script>
-
-  </body>
+        <!-- script -->
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
