@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
 
-@import './partials/links';
-
-
+@import "./partials/links";
 
 /* Smooth scroll effect */
 html {
@@ -98,18 +96,25 @@ footer {
     padding: 15px 6rem;
     border-radius: 6px;
     font-size: 1rem;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: #01308f;
+    }
     @include resp($sm) {
         font-size: 1.5rem;
     }
     @include resp($lg) {
         border-radius: 10px;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        
+        // padding-left: 3rem;
+        // padding-right: 3rem;
+    }
+    @include resp ($xl) {
+        @include py(20px, 20px);
     }
 }
 
 header,
+main,
 section {
     width: 100%;
     padding: 1rem 1.5rem;
@@ -156,6 +161,22 @@ section {
     opacity: 1 !important;
 }
 
+p {
+    font-size: 1rem;
+    opacity: 0.8;
+    line-height: 1.5;
+    @include resp($sm) {
+        font-size: 1.1rem;
+    }
+    @include resp($lg) {
+        font-size: 1.35rem;
+    }
+    @include resp($xxl) {
+        font-size: 1.5rem;
+    }
+}
+
+// navbar -----------------------------------
 .nav {
     display: flex;
     justify-content: space-between;
@@ -164,7 +185,6 @@ section {
     ul {
         visibility: hidden;
         opacity: 0;
-
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -190,15 +210,29 @@ section {
             width: initial;
             column-gap: 2rem;
         }
+        @include resp($xl) {
+            column-gap: 4rem;
+        }
+        @include resp($xxl) {
+            column-gap: 6rem;
+        }
         .nav-item {
             padding-bottom: 1rem;
             padding-top: 1rem;
-            @include resp ($lg) {
+            @include resp($lg) {
                 @include py();
             }
-        } 
+        }
         .nav-link {
             font-weight: var(--medium-font);
+        }
+        .lets-talk-btn {
+            @include resp($lg) {
+                @include px(3rem, 3rem);
+            }
+            // @include resp($mxl) {
+            //     @include px(6rem, 6rem);
+            // }
         }
     }
 }
@@ -209,5 +243,140 @@ section {
     span {
         font-weight: var(--bolder-font);
         margin-left: -9px;
+    }
+}
+
+// main section ----------------------------------
+#about {
+    @include resp($lg) {
+        height: calc(100vh - 92px);
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        @include resp($xl) {
+            height: calc(100vh - 125px);
+        }
+    }
+    .container {
+        @include resp($lg) {
+            width: 100%;
+        }
+        .wrapper {
+            @include resp($lg) {
+                display: flex;
+                align-items: center;
+                margin-top: -50px;
+            }
+            @include resp($xl) {
+                margin-top: -90px;
+            }
+            @include resp($xxl) {
+                margin-top: 0px;
+            }
+        }
+        .text {
+            margin-top: 70px;
+            text-align: center;
+            @include resp($lg) {
+                flex-basis: 50%;
+                margin-top: 0px;
+                text-align: left;
+            }
+            .dis-1 {
+                color: #4087d9;
+                font-size: 1.6rem;
+                font-weight: var(--bold-font);
+                @include resp($sm) {
+                    font-size: 2.3rem;
+                }
+                @include resp($xl) {
+                    font-size: 2.7rem;
+                }
+                @include resp($mxl) {
+                    font-size: 4.3rem;
+                }
+            }
+            .dis-2 {
+                font-size: 3rem;
+                color: $c-0487d9;
+                font-weight: var(--bolder-font);
+
+                @include resp($sm) {
+                    font-size: 4rem;
+                }
+                @include resp($xl) {
+                    margin-bottom: 10px;
+                    font-size: 5rem;
+                }
+                @include resp($mxl) {
+                    font-size: 7rem;
+                }
+            }
+            .dis-3 {
+                font-size: 1.5rem;
+                font-weight: var(--bold-font);
+                @include py(0.4rem, 0.4rem);
+                @include resp($sm) {
+                    font-size: 2rem;
+                }
+                @include resp($xl) {
+                    font-size: 2.7rem;
+                }
+
+                @include resp($mxl) {
+                    font-size: 3.3rem;
+                    @include my(40px, 40px);
+                }
+            }
+            .des {
+                max-width: 600px;
+                @include my(25px, 35px);
+                @include mx(auto, auto);
+                @include resp($lg) {
+                    @include mx(initial, initial);
+                }
+                @include resp($xxl) {
+                    margin-bottom: 50px;
+                }
+                @include resp($mxl) {
+                    margin-bottom: 80px;
+                }
+            }
+            .call-to-action {
+            }
+        }
+        .image {
+            margin-top: 50px;
+            // max-width: 350px;
+            text-align: center;
+            @include resp($md) {
+                margin-top: 75px;
+            }
+            @include resp($lg) {
+                flex-basis: 50%;
+                text-align: right;
+                margin-top: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            img {
+                width: 80%;
+                @include resp($md) {
+                    // max-width: 400px;
+                    width: 70%;
+                }
+                @include resp($lg) {
+                    width: 95%;
+                }
+                @include resp($xl) {
+                    width: initial;
+                    max-width: 575px;
+                }
+                @include resp($mxl) {
+                    max-width: 750px;
+                }
+            }
+        }
     }
 }

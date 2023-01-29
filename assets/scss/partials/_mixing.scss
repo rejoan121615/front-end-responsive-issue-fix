@@ -9,3 +9,15 @@
     padding-top: $t;
     padding-bottom: $b;
 }
+@mixin px($l: 0, $r: 0) {
+    padding-left: $l;
+    padding-right: $r;
+}
+@mixin my($t: 0, $b: 0) {
+    margin-top: $t;
+    margin-bottom: $b;
+}
+@mixin mx($l: 0, $r: 0) {
+    margin-left: $l;
+    margin-right: $r;
+}
