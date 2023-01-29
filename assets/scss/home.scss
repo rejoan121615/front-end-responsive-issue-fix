@@ -108,7 +108,7 @@ footer {
         // padding-left: 3rem;
         // padding-right: 3rem;
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         @include py(20px, 20px);
     }
 }
@@ -375,6 +375,49 @@ p {
                 }
                 @include resp($mxl) {
                     max-width: 750px;
+                }
+            }
+        }
+    }
+}
+
+// icon sections ---------------------------------------
+#intro-icons {
+    .container {
+        .icon-wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            @include py(35px, 50px);
+            @include resp($sm) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @include resp($lg) {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                font-size: 1rem;
+                font-weight: 500;
+                text-align: center;
+                &:nth-child(5) {
+                    img {
+                        height: 55px;
+                        @include resp($xxl) {
+                            height: 63px;
+                        }
+                    }
+                }
+                img {
+                    height: 72px;
+                    margin-bottom: 1rem;
+                    @include resp ($mxl) {
+                        height: 90px;
+                    }
+                }
+                span {
+                    font-size: 1rem;
                 }
             }
         }
