@@ -15,6 +15,22 @@ html {
     transition: var(--transition);
 }
 
+// extending functions 
+%secPy {
+    @include py(35px, 35px);
+    @include resp ($md) {
+        @include py(50px, 50px);
+    }
+    @include resp ($lg) {
+        @include py(75px, 70px);
+    }
+    @include resp ($xl) {
+        @include py(90px, 90px);
+    }
+    @include resp ($xxl) {
+        @include py(100px, 100px);
+    }
+}
 // common styles
 body {
     font-family: "Montserrat", sans-serif;
@@ -65,27 +81,35 @@ footer {
     padding-bottom: 5px;
 }
 
-.hover-underline-animation::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #1c418c;
-    border-radius: 10px;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+.hover-underline-animation {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #1c418c;
+        border-radius: 10px;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
 }
 
 .hover-underline-animation:hover {
-    color: #1c418c;
+    &:hover {
+        color: #1c418c;
+    }
 }
 
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.hover-underline-animation {
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
 }
 
 .lets-talk-btn {
@@ -174,6 +198,81 @@ p {
     @include resp($xxl) {
         font-size: 1.5rem;
     }
+}
+
+.text-wrap {
+    margin-top: 35px;
+    @include resp ($md) {
+        margin-top: 45px;
+    }
+    @include resp ($xl) {
+        margin-top: 60px;
+    }
+    p {
+        padding-bottom: 1.8rem;
+        @include resp($lg) {
+            padding-bottom: 2rem;
+        }
+        &:first-child {
+            padding-top: 10px;
+            &::first-letter {
+                line-height: 16px;
+                font-size: 35px;
+                @include resp($lg) {
+                    font-size: 50px;
+                }
+            }
+        }
+        &:last-child {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.sec-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    @include resp($lg) {
+        text-align: left;
+    }
+    span {
+        font-size: 1.5rem;
+        position: relative;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-align: center;
+        // display: block;
+        line-height: 1.5;
+        @include resp($lg) {
+            font-size: 2rem;
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 95%;
+            height: 4px;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #0487d9;
+            border-radius: 10px;
+            @include resp($lg) {
+                // width: 60px;
+                height: 4px;
+                bottom: 0;
+                right: initial;
+            }
+        }
+    }
+}
+
+.sub-title {
+    text-align: center;
 }
 
 // navbar -----------------------------------
@@ -412,7 +511,7 @@ p {
                 img {
                     height: 72px;
                     margin-bottom: 1rem;
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         height: 90px;
                     }
                 }
@@ -422,4 +521,10 @@ p {
             }
         }
     }
+}
+
+// fractional cto 
+.services {
+    background-color: $c-d0e9f2;
+    @extend %secPy;
 }

@@ -21,6 +21,35 @@ html {
   transition: var(--transition);
 }
 
+.services {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+@media only screen and (min-width: 768px) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .services {
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .services {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -84,7 +113,7 @@ footer {
   transition: transform 0.25s ease-out;
 }
 
-.hover-underline-animation:hover {
+.hover-underline-animation:hover:hover {
   color: #1c418c;
 }
 
@@ -188,6 +217,93 @@ p {
   p {
     font-size: 1.5rem;
   }
+}
+
+.text-wrap {
+  margin-top: 35px;
+}
+@media only screen and (min-width: 768px) {
+  .text-wrap {
+    margin-top: 45px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text-wrap {
+    margin-top: 60px;
+  }
+}
+.text-wrap p {
+  padding-bottom: 1.8rem;
+}
+@media only screen and (min-width: 992px) {
+  .text-wrap p {
+    padding-bottom: 2rem;
+  }
+}
+.text-wrap p:first-child {
+  padding-top: 10px;
+}
+.text-wrap p:first-child::first-letter {
+  line-height: 16px;
+  font-size: 35px;
+}
+@media only screen and (min-width: 992px) {
+  .text-wrap p:first-child::first-letter {
+    font-size: 50px;
+  }
+}
+.text-wrap p:last-child {
+  padding-bottom: 0px;
+}
+
+.sec-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 992px) {
+  .sec-title {
+    text-align: left;
+  }
+}
+.sec-title span {
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 992px) {
+  .sec-title span {
+    font-size: 2rem;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+}
+.sec-title span::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0487d9;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 992px) {
+  .sec-title span::after {
+    height: 4px;
+    bottom: 0;
+    right: initial;
+  }
+}
+
+.sub-title {
+  text-align: center;
 }
 
 .nav {
@@ -484,6 +600,10 @@ p {
 }
 #intro-icons .container .icon-wrap div span {
   font-size: 1rem;
+}
+
+.services {
+  background-color: #d0e9f2;
 }
 
 /*# sourceMappingURL=home.css.map */
